@@ -207,6 +207,7 @@ def main_page():
                 --text-color: #333;
                 --card-bg: white;
                 --accent-color: #007bff;
+                --home-color: #28a745;  /* Added: Green color for home button */
             }
             
             [data-theme="dark"] {
@@ -214,6 +215,7 @@ def main_page():
                 --text-color: #ffffff;
                 --card-bg: #2d2d2d;
                 --accent-color: #0d6efd;
+                --home-color: #218838;  /* Added: Darker green for dark mode */
             }
             
             body {
@@ -335,6 +337,14 @@ def main_page():
                 color: #721c24;
             }
             
+            .home-button {
+                background-color: var(--home-color);
+            }
+            
+            .home-button:hover {
+                opacity: 0.9;
+            }
+            
             @media (max-width: 768px) {
                 .reading {
                     flex-direction: column;
@@ -352,6 +362,7 @@ def main_page():
             <div class="controls">
                 <button class="button" onclick="toggleTheme()">Toggle Dark Mode</button>
                 <a href="/export_csv" class="button">Export Data (CSV)</a>
+                <a href="http://192.168.1.77:8081/" class="button home-button">Home</a>
             </div>
             
             <div class="status {{ 'connected' if arduino else 'disconnected' }}">

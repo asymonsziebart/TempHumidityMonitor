@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Temperature and Humidity Monitor
 
 A web-based monitoring system that displays real-time temperature and humidity data from an Arduino with DHT11 sensor.
@@ -70,3 +71,6 @@ ALERT_THRESHOLDS = {
     'humid_max': 60   # %
 }
 ``` 
+=======
+# TempHumidityMonitor
+>>>>>>> ff0d7388e492a8c6c14ca4f4f93f25dc6c3b11ab
