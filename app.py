@@ -207,7 +207,10 @@ def main_page():
                 --text-color: #333;
                 --card-bg: white;
                 --accent-color: #007bff;
+<<<<<<< HEAD
                 --home-color: #28a745;  /* Added: Green color for home button */
+=======
+>>>>>>> origin/main
             }
             
             [data-theme="dark"] {
@@ -215,7 +218,10 @@ def main_page():
                 --text-color: #ffffff;
                 --card-bg: #2d2d2d;
                 --accent-color: #0d6efd;
+<<<<<<< HEAD
                 --home-color: #218838;  /* Added: Darker green for dark mode */
+=======
+>>>>>>> origin/main
             }
             
             body {
@@ -337,6 +343,7 @@ def main_page():
                 color: #721c24;
             }
             
+<<<<<<< HEAD
             .home-button {
                 background-color: var(--home-color);
             }
@@ -345,6 +352,8 @@ def main_page():
                 opacity: 0.9;
             }
             
+=======
+>>>>>>> origin/main
             @media (max-width: 768px) {
                 .reading {
                     flex-direction: column;
@@ -362,7 +371,10 @@ def main_page():
             <div class="controls">
                 <button class="button" onclick="toggleTheme()">Toggle Dark Mode</button>
                 <a href="/export_csv" class="button">Export Data (CSV)</a>
+<<<<<<< HEAD
                 <a href="http://192.168.1.77:8081/" class="button home-button">Home</a>
+=======
+>>>>>>> origin/main
             </div>
             
             <div class="status {{ 'connected' if arduino else 'disconnected' }}">
@@ -611,4 +623,8 @@ if __name__ == '__main__':
     port = 8080
     print(f"Server is accessible at: http://{local_ip}:{port}")
     print("Press Ctrl+C to stop the server")
+<<<<<<< HEAD
     app.run(host='0.0.0.0', port=port, debug=True, threaded=True)
+=======
+    app.run(host='0.0.0.0', port=port, debug=True, threaded=True)
+>>>>>>> origin/main
